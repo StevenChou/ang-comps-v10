@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewsHomeComponent implements OnInit {
   stats = [
-    { value: 22, label: '# of Users' },
-    { value: 900, label: 'Revenue' },
-    { value: 50, label: 'Reviews' },
+    { value: 22, label: '# 位使用者' },
+    { value: 900, label: '收入' },
+    { value: 50, label: '評論' },
   ];
   items = [
     {
       image: '/assets/images/couch.jpeg',
-      title: 'Couch',
-      description: 'This is a fantastic couch to sit on',
+      title: '長椅',
+      description: '這是一個很棒的沙發',
     },
     {
       image: '/assets/images/dresser.jpeg',
-      title: 'Dresser',
-      description: 'This is great dresser to put stuff in',
+      title: '梳妝台',
+      description: '這是可以收納東西的梳妝台',
     },
   ];
 
