@@ -4,15 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-// 自行加入
-import { ElementsModule } from './elements/elements.module';
-import { CollectionsModule } from './collections/collections.module';
+// 改為 lazy loading
+// import { ElementsModule } from './elements/elements.module';
+// import { CollectionsModule } from './collections/collections.module';
+
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
-  imports: [BrowserModule, ElementsModule, CollectionsModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
