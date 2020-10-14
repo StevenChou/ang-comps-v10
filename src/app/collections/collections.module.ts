@@ -7,6 +7,6 @@ import { CollectionsHomeComponent } from './collections-home/collections-home.co
 @NgModule({
   declarations: [CollectionsHomeComponent],
   imports: [CommonModule, CollectionsRoutingModule],
-  exports: [CollectionsHomeComponent], // 自行增加
+  exports: [],
 })
 export class CollectionsModule {}
