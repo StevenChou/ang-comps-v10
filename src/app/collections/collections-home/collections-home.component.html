@@ -1,6 +1,17 @@
 <app-divider>Table 元件</app-divider>
-<app-table
-  class="striped celled"
-  [data]="data"
-  [headers]="headers"
-></app-table>
+<app-table class="striped celled" [data]="data" [headers]="headers"></app-table>
+
+<app-divider>Tab 元件</app-divider>
+<app-tabs>
+  <a
+    class="item"
+    routerLink="./"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >傳記</a
+  >
+  <a class="item" routerLink="./companies" routerLinkActive="active"
+    >公司</a
+  >
+  <a class="item" routerLink="./partners" routerLinkActive="active">夥伴</a>
+</app-tabs>

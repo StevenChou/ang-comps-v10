@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectionsHomeComponent implements OnInit {
   data = [
-    { name: 'James', age: 24, job: '設計師', employed: true },
-    { name: 'Jill', age: 26, job: '工程師', employed: false },
-    { name: 'Elyse', age: 25, job: '工程師', employed: true },
+    { name: 'James', age: 24, job: '設計師', employed: '是' },
+    { name: 'Jill', age: 26, job: '工程師', employed: '否' },
+    { name: 'Elyse', age: 25, job: '工程師', employed: '是' },
   ];
   headers = [
     { key: 'employed', label: '受僱' },
