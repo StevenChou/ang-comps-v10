@@ -1,0 +1,12 @@
+.actions:empty {
+  display: none;
+}
+
+.actions-default {
+  display: none;
+}
+
+/* 先找有 actions class 且沒有子元素，然後它的兄弟元素有 actions-default 者 */
+.actions:empty + .actions-default {
+  display: block;
+}

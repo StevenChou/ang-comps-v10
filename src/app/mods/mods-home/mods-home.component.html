@@ -1,0 +1,15 @@
+<app-divider>Modal 元件</app-divider>
+
+<button (click)="onClick()">Show Modal</button>
+
+<app-modal (closeEvent)="onClick()" *ngIf="modalOpen">
+  <div modalTitle>I am a RESUABLE TITLE</div>
+  <p>I am a RESUABLE modal window!</p>
+  <!-- 利用 ng-contaainer 取代 div -->
+  <ng-container modalFooter>
+    <button (click)="onClick()" class="ui button">CLOSE ME!</button>
+  </ng-container>
+</app-modal>
+
+<app-divider>Accordion 元件</app-divider>
+<app-accordion [items]="items"></app-accordion>
